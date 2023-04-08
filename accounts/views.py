@@ -7,6 +7,7 @@ from django.http import HttpResponse
 
 
 def login_user(request):
+    return HttpResponse("<h1> Django Deployed </h1>")
     if request.method == 'POST':
         username = request.POST.get('username')
         password = request.POST.get('password')
